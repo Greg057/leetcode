@@ -6,6 +6,11 @@ class TreeNode:
         self.right = right
 
 from typing import Optional
+
+# time complexity: O(n)
+# space complexity: O(n) because worst case scenario where every node has only the left child 
+#   (the right child is null), it is essentially a linked list, so have to make n recursive 
+#   calls and store n stack frames, where n is the number of nodes
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
