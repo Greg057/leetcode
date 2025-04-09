@@ -7,6 +7,8 @@ class ListNode:
         self.next = next
 
 # Iterative approach
+# Time Complexity: O(n)
+# Space Complexity: O(1)
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev = None
@@ -20,6 +22,8 @@ class Solution:
         return prev
     
 # Recursive approach
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         return self.recursiveReverse(None, head)
